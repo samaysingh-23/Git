@@ -1,0 +1,19 @@
+def add_and_subtract(a, b, operation):
+    if operation == 'sum':
+        return a + b
+    elif operation == 'diff':
+        return a - b
+    else:
+        return None
+
+num1 = float(input("Enter the first number: "))
+num2 = float(input("Enter the second number: "))
+
+operation_choice = input("Enter 'sum' for addition or 'diff' for subtraction: ")
+
+result = add_and_subtract(num1, num2, operation_choice)
+
+if result is not None:
+    print(f"Result of {operation_choice}: {result}")
+else:
+    print("Invalid operation choice. Please enter 'sum' or 'diff'.")
